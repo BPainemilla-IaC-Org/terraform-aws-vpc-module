@@ -13,10 +13,10 @@ output "subnet_public_b_id" {
   value       = aws_subnet.public_b.id
 }
 
-output "security_group_id" {
-  description = "ID del Security Group perimetral"
-  value       = aws_security_group.web.id
-}
+#output "security_group_id" {
+#  description = "ID del Security Group perimetral"
+#  value       = aws_security_group.web.id
+#}
 
 output "subnet_ids" {
   description = "Lista combinada de subredes publicas"

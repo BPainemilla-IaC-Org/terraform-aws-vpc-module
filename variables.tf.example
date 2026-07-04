@@ -1,7 +1,7 @@
 variable "vpc_name" {
   description = "Nombre asignado como etiqueta (Tag: Name) a la VPC"
   type        = string
-  default     = "VampireNightXX-vpc"
+  default     = "BRPainemilla-vpc"
 }
 
 variable "vpc_cidr_block" {
@@ -13,7 +13,7 @@ variable "vpc_cidr_block" {
 variable "subnet_a_name" {
   description = "Nombre asignado a la Subred Publica de la zona A"
   type        = string
-  default     = "VampireNightXX-subnet-a"
+  default     = "BRPainemilla-subnet-a"
 }
 
 variable "subnet_a_cidr" {
@@ -31,7 +31,7 @@ variable "subnet_a_az" {
 variable "subnet_b_name" {
   description = "Nombre asignado a la Subred Publica de la zona B"
   type        = string
-  default     = "VampireNightXX-subnet-b"
+  default     = "BRPainemilla-subnet-b"
 }
 
 variable "subnet_b_cidr" {
@@ -49,19 +49,19 @@ variable "subnet_b_az" {
 variable "internet_gateway_name" {
   description = "Nombre asignado al Internet Gateway para habilitar salida publica"
   type        = string
-  default     = "VampireNightXX-igw"
+  default     = "BRPainemilla-igw"
 }
 
 variable "route_table_name" {
   description = "Nombre asignado a la Tabla de Enrutamiento Publica"
   type        = string
-  default     = "VampireNightXX-rt"
+  default     = "BRPainemilla-rt"
 }
 
 variable "security_group_name" {
   description = "Nombre asignado al Security Group perimetral"
   type        = string
-  default     = "VampireNightXX-sg"
+  default     = "BRPainemilla-sg"
 }
 
 variable "ssh_port" {
