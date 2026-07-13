@@ -28,7 +28,8 @@ graph TD
         RT --> SubB["Subred Pública B (Zona de Disponibilidad 2)"]:::vpc
     end
 ```
-Características de Implementación
+## Características de Implementación
+
 Segmentación de Red: Creación de bloques CIDR dedicados para entornos aislados.
 
 Alta Disponibilidad: Distribución de subredes públicas a través de múltiples Zonas de Disponibilidad (AZs) para tolerancia a fallos.
