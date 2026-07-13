@@ -36,6 +36,7 @@ Alta Disponibilidad: Distribución de subredes públicas a través de múltiples
 
 Enrutamiento Explícito: Configuración integral de tablas de rutas e Internet Gateways para garantizar conectividad controlada hacia el exterior.
 
+# EJEMPLO DE USO
 ```
 module "networking" {
   source                = "git::[https://github.com/BPainemilla-IaC-Org/terraform-aws-vpc-module.git?ref=v1.0.0](https://github.com/BPainemilla-IaC-Org/terraform-aws-vpc-module.git?ref=v1.0.0)"
