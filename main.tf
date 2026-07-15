@@ -45,29 +45,29 @@ resource "aws_route_table_association" "b" {
   route_table_id = aws_route_table.public.id
 }
 
-#resource "aws_security_group" "web" {
-#  name        = var.security_group_name
-#  vpc_id      = aws_vpc.main.id
-#
-#  ingress {
-#    from_port   = var.ssh_port
-#    to_port     = var.ssh_port
-#    protocol    = "tcp"
-#    cidr_blocks = var.allowed_cidr_blocks
-#  }
-#
-#  ingress {
-#    from_port   = var.http_port
-#    to_port     = var.http_port
-#    protocol    = "tcp"
-#    cidr_blocks = var.allowed_cidr_blocks
-#  }
-#
-#  egress {
-#    from_port   = 0
-#    to_port     = 0
-#    protocol    = "-1"
-#    cidr_blocks = ["0.0.0.0/0"]
-#  }
-#  tags = { Name = var.security_group_name }
-#}
+resource "aws_security_group" "web" {
+  name        = var.security_group_name
+  vpc_id      = aws_vpc.main.id
+
+  ingress {
+    from_port   = var.ssh_port
+    to_port     = var.ssh_port
+    protocol    = "tcp"
+    cidr_blocks = var.allowed_cidr_blocks
+  }
+
+  ingress {
+    from_port   = var.http_port
+    to_port     = var.http_port
+    protocol    = "tcp"
+    cidr_blocks = var.allowed_cidr_blocks
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  tags = { Name = var.security_group_name }
+}
